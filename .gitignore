@@ -1,0 +1,67 @@
+# ===== Unity (funciona aunque el proyecto esté en una subcarpeta) =====
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+[Mm]emoryCaptures/
+[Rr]ecordings/
+
+# Carpeta de assets de Asset Store / plugins que se regeneran
+**/Assets/AssetStoreTools*
+**/Assets/Plugins/Editor/JetBrains*
+
+# Archivos generados por IDEs (Rider, Visual Studio, VS Code)
+.vs/
+.vscode/
+.idea/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Crash reports / builds
+sysinfo.txt
+crashlytics-build.properties
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Burst / Addressables generados
+*_BurstDebugInformation_DoNotShip/
+**/Assets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+**/Assets/[Ss]treamingAssets/aa.meta
+**/Assets/[Ss]treamingAssets/aa/*
+
+# ===== Sistema operativo =====
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# ===== Python (por si agregan el lado de agentes/servidor) =====
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
