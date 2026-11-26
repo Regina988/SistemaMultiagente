@@ -37,14 +37,14 @@ Estos paquetes **no están en el repo** porque pesan mucho (~300 MB). Son gratis
 
 | Paquete | Para qué | Link |
 |---|---|---|
-| Essential Nature Pack (Polyeler) | Árboles, rocas, plantas y terreno del bosque | [Asset Store](https://assetstore.unity.com/packages/3d/environments/essential-nature-pack-381800) |
+| Essential Nature Pack (Polyeler) | Árboles, rocas, plantas y texturas del bosque (el terreno ya está en el repo) | [Asset Store](https://assetstore.unity.com/packages/3d/environments/essential-nature-pack-381800) |
 
 Pasos:
 
 1. Abrir el link e iniciar sesión con tu cuenta de Unity → **Add to My Assets**.
 2. En Unity: **Window → Package Manager → My Assets** (en el menú desplegable de arriba a la izquierda).
 3. Buscar el paquete → **Download** → **Import** → dejar todo marcado → **Import**.
-4. Debe quedar en `Assets/Polyeler/EssentialNaturePack/`. **No lo muevas ni lo renombres**: la escena lo busca en esa ruta.
+4. Debe quedar en `Assets/Polyeler/EssentialNaturePack/`. Déjalo en esa ruta: la herramienta **Herramientas → Editar Terreno** la usa para restaurar objetos de suelo.
 5. **No edites archivos dentro de `Assets/Polyeler/`**: están ignorados por Git, así que tus cambios no le llegarían a nadie. Si necesitas modificar algo del paquete, duplícalo (Cmd/Ctrl + D) fuera de esa carpeta.
 
 > Si abriste `Bosque.unity` antes de importar el paquete y ves objetos faltantes, ciérrala sin guardar, importa el paquete y vuelve a abrirla.
