@@ -1,0 +1,11 @@
+
+ultralytics[export-openvino]
+fastapi
+uvicorn[standard]
+python-multipart
+opencv-python-headless
+numpy
+pydantic
+requests
+pytest
+httpx
