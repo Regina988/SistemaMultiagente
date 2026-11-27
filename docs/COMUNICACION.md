@@ -66,10 +66,10 @@ frame = cv2.imdecode(np.frombuffer(mensaje[1:], np.uint8), cv2.IMREAD_COLOR)
 
 ## Probar el lado de Unity sin AgentPy ni YOLO
 
-En `python/pruebas_unity/` hay dos servidores de prueba:
+En `python/` hay dos servidores de prueba:
 
 ```bash
-cd python/pruebas_unity
+cd python
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
