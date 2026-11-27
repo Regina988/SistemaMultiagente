@@ -59,9 +59,24 @@ crashlytics-build.properties
 Thumbs.db
 Desktop.ini
 
-# ===== Python (por si agregan el lado de agentes/servidor) =====
+# ===== Python (AgentPy, nodo de visión y servidores de prueba) =====
+# Bytecode y cachés
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Entornos virtuales y variables de entorno (cada quien crea el suyo con requirements.txt)
 .venv/
 venv/
+env/
 .env
+
+# Empaquetado
+*.egg-info/
+dist/
+
+# Resultados que genera Ultralytics/YOLO al entrenar o predecir
+python/**/runs/
