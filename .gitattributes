@@ -26,6 +26,9 @@
 *.lighting      text eol=lf merge=unityyamlmerge
 
 # Binarios: no tocar
+# Unity guarda estos .asset en binario aunque esté en Force Text (terreno e iluminación generada)
+*Terrain.asset      binary
+LightingData.asset  binary
 *.png  binary
 *.jpg  binary
 *.jpeg binary

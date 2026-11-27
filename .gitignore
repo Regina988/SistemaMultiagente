@@ -13,6 +13,10 @@
 **/Assets/AssetStoreTools*
 **/Assets/Plugins/Editor/JetBrains*
 
+# Paquetes del Asset Store que cada quien importa (ver docs/SETUP_UNITY.md)
+**/Assets/Polyeler/
+**/Assets/Polyeler.meta
+
 # Archivos generados por IDEs (Rider, Visual Studio, VS Code)
 .vs/
 .vscode/

@@ -28,6 +28,26 @@ git clone https://github.com/Regina988/SistemaMultiagente.git
 1. En Unity Hub: **Projects → Add → Add project from disk**.
 2. Seleccionar la carpeta `SistemaMultiagente/unity/droneSim`.
 3. La primera vez tarda varios minutos: Unity genera la carpeta `Library/` local (no se sube al repo).
+4. **Importar los assets del Asset Store** (sección siguiente). Sin esto la escena se ve vacía o con objetos faltantes.
+5. Abrir la escena principal: `Assets/Scenes/Bosque.unity`.
+
+## Assets del Asset Store (cada quien los importa)
+
+Estos paquetes **no están en el repo** porque pesan mucho (~300 MB). Son gratis y cada quien los importa una vez:
+
+| Paquete | Para qué | Link |
+|---|---|---|
+| Essential Nature Pack (Polyeler) | Árboles, rocas, plantas y texturas del bosque (el terreno ya está en el repo) | [Asset Store](https://assetstore.unity.com/packages/3d/environments/essential-nature-pack-381800) |
+
+Pasos:
+
+1. Abrir el link e iniciar sesión con tu cuenta de Unity → **Add to My Assets**.
+2. En Unity: **Window → Package Manager → My Assets** (en el menú desplegable de arriba a la izquierda).
+3. Buscar el paquete → **Download** → **Import** → dejar todo marcado → **Import**.
+4. Debe quedar en `Assets/Polyeler/EssentialNaturePack/`. Déjalo en esa ruta: la herramienta **Herramientas → Editar Terreno** la usa para restaurar objetos de suelo.
+5. **No edites archivos dentro de `Assets/Polyeler/`**: están ignorados por Git, así que tus cambios no le llegarían a nadie. Si necesitas modificar algo del paquete, duplícalo (Cmd/Ctrl + D) fuera de esa carpeta.
+
+> Si abriste `Bosque.unity` antes de importar el paquete y ves objetos faltantes, ciérrala sin guardar, importa el paquete y vuelve a abrirla.
 
 ## Reglas para trabajar con Git
 
