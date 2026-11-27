@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4705393105408850147}
   - component: {fileID: 1491901534839902835}
   - component: {fileID: 1522186644848517593}
+  - component: {fileID: 7223280346750694485}
+  - component: {fileID: 8764538984111106388}
   m_Layer: 0
   m_Name: Dron
   m_TagString: Untagged
@@ -83,6 +85,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7223280346750694485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659403296800378354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1116fed4351b54c8f81e546fd8678985, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VisualDron
+  velocidadMovimiento: 6
+  velocidadGiro: 5
+  alturaIndicador: 0.8
+  tamanoIndicador: 0.35
+  colisiones: 0
+--- !u!114 &8764538984111106388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659403296800378354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 949b6dea7df0143c6a609cf848b49868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CamaraWebSocket
+  idDron: 1
+  urlServidorVision: ws://localhost:8766
+  camaraDron: {fileID: 0}
+  ancho: 1280
+  alto: 720
+  intervaloCaptura: 0.5
+  calidadJPG: 75
+  mostrarRespuestas: 1
 --- !u!1 &4162522012464445452
 GameObject:
   m_ObjectHideFlags: 0
