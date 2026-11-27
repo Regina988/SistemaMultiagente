@@ -28,26 +28,24 @@ git clone https://github.com/Regina988/SistemaMultiagente.git
 1. En Unity Hub: **Projects → Add → Add project from disk**.
 2. Seleccionar la carpeta `SistemaMultiagente/unity/droneSim`.
 3. La primera vez tarda varios minutos: Unity genera la carpeta `Library/` local (no se sube al repo).
-4. **Importar los assets del Asset Store** (sección siguiente). Sin esto la escena se ve vacía o con objetos faltantes.
-5. Abrir la escena principal: `Assets/Scenes/Bosque.unity`.
+4. Abrir la escena principal: `Assets/Scenes/Bosque.unity`.
 
-## Assets del Asset Store (cada quien los importa)
+> El clone pesa ~300 MB porque incluye los assets del bosque (ver sección siguiente). Es normal que tarde.
 
-Estos paquetes **no están en el repo** porque pesan mucho (~300 MB). Son gratis y cada quien los importa una vez:
+## Assets de terceros incluidos en el repo
 
-| Paquete | Para qué | Link |
-|---|---|---|
-| Essential Nature Pack (Polyeler) | Árboles, rocas, plantas y texturas del bosque (el terreno ya está en el repo) | [Asset Store](https://assetstore.unity.com/packages/3d/environments/essential-nature-pack-381800) |
+Estos paquetes del Asset Store **ya vienen en el repo**, no hay que descargarlos ni importarlos:
 
-Pasos:
+| Paquete | Ubicación | Para qué | Origen |
+|---|---|---|---|
+| Essential Nature Pack (Polyeler) | `Assets/Polyeler/EssentialNaturePack/` | Árboles, rocas, plantas y texturas del bosque | [Asset Store](https://assetstore.unity.com/packages/3d/environments/essential-nature-pack-381800) (gratis, licencia estándar del Asset Store) |
 
-1. Abrir el link e iniciar sesión con tu cuenta de Unity → **Add to My Assets**.
-2. En Unity: **Window → Package Manager → My Assets** (en el menú desplegable de arriba a la izquierda).
-3. Buscar el paquete → **Download** → **Import** → dejar todo marcado → **Import**.
-4. Debe quedar en `Assets/Polyeler/EssentialNaturePack/`. Déjalo en esa ruta: la herramienta **Herramientas → Editar Terreno** la usa para restaurar objetos de suelo.
-5. **No edites archivos dentro de `Assets/Polyeler/`**: están ignorados por Git, así que tus cambios no le llegarían a nadie. Si necesitas modificar algo del paquete, duplícalo (Cmd/Ctrl + D) fuera de esa carpeta.
+Reglas:
 
-> Si abriste `Bosque.unity` antes de importar el paquete y ves objetos faltantes, ciérrala sin guardar, importa el paquete y vuelve a abrirla.
+- **No muevas ni renombres `Assets/Polyeler/`**: la herramienta **Herramientas → Editar Terreno** usa esa ruta para restaurar objetos de suelo.
+- **No modifiques archivos dentro del paquete.** Si necesitas cambiar algo (un material, un prefab), duplícalo (Cmd/Ctrl + D) a una carpeta propia del proyecto. Así el paquete queda igual al original y se puede actualizar sin perder cambios.
+- **No reimportes el paquete desde el Asset Store** encima del que está en el repo, salvo que el equipo decida actualizarlo.
+- El terreno que usa la escena es `Assets/Scenes/BosqueTerrain.asset` (copia propia), no el `New Terrain.asset` del paquete.
 
 ## Reglas para trabajar con Git
 
